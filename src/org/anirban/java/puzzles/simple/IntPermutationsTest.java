@@ -23,7 +23,8 @@ class IntPermutationsTest {
 	@BeforeAll
 	static void setUp()
 	{
-		howManyPermutes = 13;
+		howManyPermutes = 10;
+		// Note if howmanyPermutes is >= 11 this will generate enormous files in output >120GB and will exhaust disk space
 		ip = new IntPermutations(howManyPermutes);
 		outFile = new File("outFile.txt");
 		try {
