@@ -31,7 +31,7 @@ public class StringPermutation {
 	}
 	
 	public static void main(String[] args) {
-		String str = "0123456789ABCD";
+		String str = "0123456789ABC";
 		int len = str.length();
 		System.out.format("Total permutes are : %-,15d%n", fact(len));
 		System.out.println("All the permutations of the string are: \n");
@@ -82,7 +82,7 @@ public class StringPermutation {
 				totalLength += currentBufferLength;
 				//totalLength = (long)currentBufferLength*trimCount;
 				//sb.delete(0, currentBufferLength);
-				if (trimCount%10000 == 1)
+				if (trimCount%1000 == 1)
 				{
 					System.out.format("Trim    : %,-8d%n", trimCount);
 					System.out.format("len:%d * count:%-,15d = %,-12d%n", (len+1), count, (len+1)*count);
